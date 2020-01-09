@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let transationDelegate = ModalTransitionDelegate()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -18,6 +19,13 @@ class ViewController: UIViewController {
 
     @IBAction func onPushTapped(_ sender: Any) {
         navigationController?.pushViewController(SecondViewController(), animated: true)
+    }
+    
+    @IBAction func onPresentTapped(_ sender: Any) {
+        let toVC = PresentedViewController()
+        toVC.transitioningDelegate = transationDelegate
+        toVC.modalPresentationStyle = .custom
+        present(toVC, animated: true, completion: nil)
     }
     
 }

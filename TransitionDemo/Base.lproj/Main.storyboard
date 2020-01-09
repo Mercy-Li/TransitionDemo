@@ -41,6 +41,15 @@
                                     <action selector="onPushTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zds-nu-ZG3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y23-uP-JZZ">
+                                <rect key="frame" x="177" y="477" width="66" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="present"/>
+                                <connections>
+                                    <action selector="onPresentTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T0M-iV-yvU"/>
+                                    <action selector="onPushTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uar-Be-YuL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
