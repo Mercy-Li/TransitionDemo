@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oGH-pm-lpv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bam-Ck-f3J">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -7,10 +7,47 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Item 2-->
+        <scene sceneID="aU5-ad-HVI">
+            <objects>
+                <viewController id="QZj-V1-3Xb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AMv-8M-o2m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ODi-it-JHK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="OhB-IG-wFz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSY-77-UeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1812" y="16"/>
+        </scene>
+        <!--Scroll Tab Bar Controller-->
+        <scene sceneID="BKy-O3-Q3A">
+            <objects>
+                <tabBarController id="bam-Ck-f3J" customClass="ScrollTabBarController" customModule="TransitionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uK6-D1-R9g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="delegate" destination="YZh-YR-jjt" id="dxj-6e-elu"/>
+                        <segue destination="QZj-V1-3Xb" kind="relationship" relationship="viewControllers" id="Noe-JK-N9g"/>
+                        <segue destination="oGH-pm-lpv" kind="relationship" relationship="viewControllers" id="Rwf-IE-IzT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGC-O8-24X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="YZh-YR-jjt" customClass="TabControllerDelegate" customModule="TransitionDemo" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="-2731" y="-309"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="jVq-VV-teK">
             <objects>
                 <navigationController id="oGH-pm-lpv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="yBW-BX-6Pg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mkR-3t-K7d">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -23,7 +60,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NpI-zR-tg1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <customObject id="sTY-bR-hfp" customClass="NavigationDelegate" customModule="TransitionDemo" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="-1161" y="40"/>
+            <point key="canvasLocation" x="-1206" y="-252"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

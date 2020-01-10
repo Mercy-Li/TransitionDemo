@@ -11,6 +11,8 @@
 		F215F08D23C7201A0092BBBC /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F08C23C7201A0092BBBC /* PresentedViewController.swift */; };
 		F215F09023C7206C0092BBBC /* ModalTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F08F23C7206C0092BBBC /* ModalTransitionDelegate.swift */; };
 		F215F09323C72BE80092BBBC /* OverlayPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F09223C72BE80092BBBC /* OverlayPresentationController.swift */; };
+		F215F09523C731830092BBBC /* TabControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F09423C731830092BBBC /* TabControllerDelegate.swift */; };
+		F215F09723C733230092BBBC /* ScrollTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215F09623C733230092BBBC /* ScrollTabBarController.swift */; };
 		F25E5DF523C6BFF10039973A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25E5DF423C6BFF10039973A /* AppDelegate.swift */; };
 		F25E5DF723C6BFF10039973A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25E5DF623C6BFF10039973A /* SceneDelegate.swift */; };
 		F25E5DF923C6BFF10039973A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25E5DF823C6BFF10039973A /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 		F215F08C23C7201A0092BBBC /* PresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
 		F215F08F23C7206C0092BBBC /* ModalTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransitionDelegate.swift; sourceTree = "<group>"; };
 		F215F09223C72BE80092BBBC /* OverlayPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPresentationController.swift; sourceTree = "<group>"; };
+		F215F09423C731830092BBBC /* TabControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabControllerDelegate.swift; sourceTree = "<group>"; };
+		F215F09623C733230092BBBC /* ScrollTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTabBarController.swift; sourceTree = "<group>"; };
 		F25E5DF123C6BFF10039973A /* TransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25E5DF423C6BFF10039973A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F25E5DF623C6BFF10039973A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			children = (
 				F25E5E0823C6C2DE0039973A /* NavigationDelegate.swift */,
 				F215F08F23C7206C0092BBBC /* ModalTransitionDelegate.swift */,
+				F215F09423C731830092BBBC /* TabControllerDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -76,6 +81,7 @@
 				F25E5DF823C6BFF10039973A /* ViewController.swift */,
 				F25E5E0C23C6D1250039973A /* SecondViewController.swift */,
 				F215F08C23C7201A0092BBBC /* PresentedViewController.swift */,
+				F215F09623C733230092BBBC /* ScrollTabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,6 +191,7 @@
 			files = (
 				F25E5E0D23C6D1250039973A /* SecondViewController.swift in Sources */,
 				F215F08D23C7201A0092BBBC /* PresentedViewController.swift in Sources */,
+				F215F09723C733230092BBBC /* ScrollTabBarController.swift in Sources */,
 				F215F09323C72BE80092BBBC /* OverlayPresentationController.swift in Sources */,
 				F25E5DF923C6BFF10039973A /* ViewController.swift in Sources */,
 				F25E5DF523C6BFF10039973A /* AppDelegate.swift in Sources */,
@@ -193,6 +200,7 @@
 				F25E5E0B23C6C5A10039973A /* SlideAnimatorController.swift in Sources */,
 				F25E5E0923C6C2DE0039973A /* NavigationDelegate.swift in Sources */,
 				F25E5DF723C6BFF10039973A /* SceneDelegate.swift in Sources */,
+				F215F09523C731830092BBBC /* TabControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
